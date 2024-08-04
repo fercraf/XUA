@@ -1,0 +1,1428 @@
+/*=====================================================
+Free Building Company Website Template Website Stylesheet
+                Body Core Stylesheet
+========================================================*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    overflow-x: hidden;
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+a {
+    color: rgb(103, 90, 114);
+}
+a:hover {
+    color: rgb(85, 58, 71);
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    color: rgb(255, 255, 255);
+    background-color: #6c63ff;
+}
+
+.navbar {
+    transition: 500ms ease;
+    background: transparent;
+}
+
+.navbar-collapse {
+    margin-top: 8px;
+}
+
+.navbar.scrolled {
+    margin: 0;
+    background: #444341;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+    -box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+}
+
+.navbar.scrolled img {
+    width: 80%;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #6c63ff;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #fed253;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: transparent;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+p {
+    text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0px;
+    padding: 0px
+}
+
+ul {
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+li {
+    display: inline-block;
+}
+
+a,
+.btn {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.viewbox-button-default {
+    fill: rgba(0, 255, 0, 0.45);
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+}
+
+.item img {
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.item:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 20px;
+    color: #959595;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 20px;
+    color: #959595;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 20px;
+    color: #959595;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 20px;
+    color: #959595;
+}
+
+.boton-donar:focus,
+.boton-donar:hover {
+    color: #fff;
+    background-color: #6c63ff;
+}
+
+.boton-donar {
+    text-align: center;
+    color: #fff;
+    line-height: 16px;
+    padding: 5px 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    background-color: #5b5879;
+    text-transform: capitalize;
+    font-family: 'Baloo Thambi', cursive;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+/*---- Nav-Styles ----*/
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: #6c63ff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    line-height: 16px;
+    padding: 5px 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    background-color: #5b5879;
+    text-transform: capitalize;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+nav ul > li > .active,
+.nav-link:hover {
+    color: #ffff;
+}
+
+.navbar {
+    margin: 50px 0 0;
+    height: 85px;
+    z-index: 9;
+}
+
+.icons {
+    float: right;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul > li .nav-link {
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+nav ul > li > a {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.hidden-xs {
+    font-size: 13px;
+    line-height: 32px;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgb(0, 0, 0);
+    border-color: rgba(0, 0, 0, 0.43);
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+.whatsapp-btn i {
+    font-size: 30px;
+}
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modal-toggle:checked ~ .modal {
+    display: block;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.close-modal:hover {
+    background-color: darkblue;
+    transform: scale(1.1);
+}
+
+/* Mostrar el modal cuando el checkbox está seleccionado */
+#modal-toggle:checked ~ .modal {
+    display: flex;
+}
+/* Ocultar el checkbox */
+#modal-toggle {
+    display: none;
+}
+.img-whatsapp{
+    width: 50px;
+}
+/*---- Banner-Section-Styles ----*/
+.banner {
+    width: 100%;
+    height: 100vh;
+    color: #2b4f5c;
+    background-image: url("../image/abuelitos.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 275px;
+    position: relative;
+    background-position: center;
+}
+
+.banner .big-box {
+    width: 60%;
+    height: auto;
+    padding-top: 300px;
+    text-align: left;
+}
+
+.banner .big-box h1 {
+    font-size: 58px;
+    font-weight: 400;
+    padding-bottom: 60px;
+    color: #3f3d56;
+    text-transform: capitalize;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.banner .btn-primary {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 18px 55px;
+    text-transform: capitalize;
+    background-color: #fed253;
+    border: 3px solid #fed253;
+    border-radius: 100px;
+    letter-spacing: -0.5px;
+}
+
+.banner .btn:hover {
+    border: 3px solid #fed253;
+    color: #3f3d56;
+    background: none;
+}
+
+/*-- servicios-Styles --*/
+.about {
+    margin-top: -30px;
+}
+
+.about h3 {
+    text-transform: capitalize;
+    font-size: 45px;
+    font-weight: 700;
+    color: #3f3d56;
+    padding-bottom: 30px;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.about .figure-caption {
+    font-size: 90%;
+    color: #ffffff;
+    padding: 45px;
+    border-radius: 0 0 30px 30px;
+    background-color: #3f3d56;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about .figure-caption li {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    background-color: #494664;
+    border-radius: 10px;
+    width: auto;
+    }
+
+
+.about .main-content .figure {
+    display: block;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 30px 30px 0 0;
+}
+
+.about .figure-caption h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fed253;
+    padding-bottom: 10px;
+}
+
+.about .figure-caption h4 a {
+    color: #fed253;
+}
+
+.about .figure-caption p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about .main-content {
+    border-radius: 50px;
+}
+
+.about .main-content figure img {
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.about .main-content figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.about .main-content figure {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.about .main-content:nth-child(2) {
+    margin-top: -70px;
+}
+
+/*-- servicios-Styles --*/
+.servicios {
+    width: 100%;
+    height: auto;
+    padding: 110px 0;
+}
+
+.servicios h3 {
+    text-transform: capitalize;
+    font-size: 58px;
+    font-weight: 700;
+    color: #3f3d56;
+    padding-bottom: 30px;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.servicios .inner-content h4 a {
+    color: #3f3d56;
+}
+
+.servicios .content p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.servicios .inner-content h4 {
+    color: #3f3d56;
+    font-size: 34px;
+    padding-bottom: 10px;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.servicios .inner-content p {
+    font-size: 18px;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.servicios .inner-content .readmore {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    color: #000;
+    margin-bottom: 40px;
+    border-bottom: 11px solid #fed253;
+}
+
+.content {
+    margin-bottom: 40px;
+}
+
+.inner-content span {
+    margin-right: 20px;
+}
+
+.inner-content span img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+/*-- ayudar-Styles --*/
+.ayudar {
+    width: 100%;
+    height: auto;
+    padding: 130px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ayudar h3 {
+    text-transform: capitalize;
+    font-size: 58px;
+    font-weight: 700;
+    color: #3f3d56;
+    padding-bottom: 50px;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.ayudar p {
+    margin-top: 30px;
+    font-size: 22px;
+    height: 250px;
+}
+
+.ayudar h5 {
+    font-size: 28px;
+    padding-bottom: 5px;
+    color: #6c63ff;
+}
+
+.ayudar h6 {
+    font-size: 20px;
+    color: #a1a1a1;
+}
+
+/*---- ayudar-Styles ----*/
+.quote {
+    width: 100%;
+    height: auto;
+    padding: 130px 0;
+    background-image: url("../image/info.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quote h3 {
+    text-transform: capitalize;
+    font-size: 58px;
+    font-weight: 700;
+    color: #3f3d56;
+    padding-bottom: 10px;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.quote .btn-primary {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 18px 55px;
+    text-transform: capitalize;
+    background-color: #fed253;
+    border: 3px solid #fed253;
+    border-radius: 100px;
+    letter-spacing: -0.5px;
+}
+
+.quote .btn:hover {
+    border: 3px solid #fed253;
+    color: #3f3d56;
+    background: none;
+}
+
+.quote p {
+    font-size: 22px;
+    width: 70%;
+}
+
+/*-- galeria-Styles --*/
+.galeria {
+    width: 100%;
+    height: auto;
+    padding: 200px 0 200px;
+    background-image: url("../image/portfolio-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galeria .carousel-multi-item-2 .card img {
+    width: 100%;
+    height: 422px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid #fff;
+    position: relative;
+}
+
+.galeria .heading {
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.galeria .heading h3 {
+    width: fit-content;
+    color: #ffffff;
+    font-size: 58px;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.galeria .card {
+    border: none;
+    background-color: transparent;
+}
+
+.controls-top {
+    width: fit-content;
+    margin-left: 30px;
+    text-align: right;
+}
+
+.modal-backdrop.show {
+    opacity: .7;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: flex;
+}
+
+/*---- contact-Styles ----*/
+.contact {
+    width: 100%;
+    height: auto;
+    padding: 110px 0;
+    background-image: url("../image/contact-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.contact img {
+    padding-bottom: 30px;
+}
+
+.contact h5 {
+    text-transform: capitalize;
+    font-size: 58px;
+    font-weight: 700;
+    color: #3f3d56;
+    padding-bottom: 50px;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.contact {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact p {
+    font-size: 18px;
+    display: block;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.contact .contact-nav li {
+    font-size: 12px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.contact li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+}
+
+.contact li a:hover {
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+    color: #6c63ff;
+}
+
+.contact .form-control {
+    border-radius: 0;
+    padding: 30px 10px;
+    box-shadow: none;
+    border: none;
+    border-bottom: 3px solid #636363;
+    border-radius: 0;
+}
+
+.contact .btn {
+    padding: 17px 59px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 100px;
+    font-weight: 700;
+    background-color: #3f3d56;
+    border: 3px solid #3f3d56;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+}
+
+.contact .massage {
+    margin-bottom: 40px;
+}
+
+.contact .copyright p {
+    text-align: center;
+}
+
+.contact h6 {
+    color: #c2c2c2;
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    background: #000000;
+    position: relative;
+    margin-top: -1px;
+}
+
+.contact .adress {
+    width: 70%;
+    margin: auto;
+}
+
+.contact address {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact .btn:hover {
+    border: 3px solid #3f3d56;
+    color: #3f3d56;
+    background: none;
+}
+
+.contact .adress span a {
+    font-size: 26px;
+    margin-right: 30px;
+}
+
+.contact h6 a,
+.contact h6 a:hover {
+    color: #00ff00;
+}
+
+/* .politica .container{
+    background-color: #FED253;
+    padding: 2.3rem 2.3rem 1rem 2rem;
+     border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.politica h3 {
+    text-transform: capitalize;
+    font-size: 58px;
+    font-weight: 700;
+    color: #3f3d56;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.politica video {
+    width: 100%;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+} */
+
+/*---- Footer-Styles ----*/
+footer {
+    width: 100%;
+    height: auto;
+    padding: 60px 0 50px;
+    background-color: #3f3d56;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    color: #d5d5d5;
+}
+
+footer li a {
+    color: #d5d5d5;
+    padding: 5px 5px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    color: #d7d7d7;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+footer a:hover {
+    color: #fed253;
+}
+
+.carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%;
+}
+
+/*==============================================
+            Media Queries Styles
+===============================================*/
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .banner .big-box {
+        width: 75%;
+    }
+
+    .navbar {
+        margin: 20px 0 0;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        padding: 5px 20px;
+    }
+
+    .banner .big-box {
+        padding-top: 250px;
+    }
+
+    .banner .big-box h1 {
+        font-size: 52px;
+        padding-bottom: 40px;
+    }
+
+    .banner .btn-primary {
+        font-size: 22px;
+        padding: 15px 50px;
+    }
+
+    .about .figure-caption {
+        padding: 30px;
+    }
+
+    .about .figure-caption p {
+        font-size: 16px;
+    }
+
+    .servicios h3,
+    .galeria .heading h3,
+    .ayudar h3,
+    .quote h3 {
+        font-size: 46px;
+    }
+
+    .servicios .content p {
+        font-size: 16px;
+    }
+
+    .servicios .inner-content h4 {
+        font-size: 28px;
+    }
+
+    .servicios {
+        padding: 50px 0;
+    }
+
+    .ayudar p {
+        font-size: 18px;
+        
+    }
+
+    .ayudar h5 {
+        font-size: 22px;
+    }
+
+    .ayudar h6 {
+        font-size: 16px;
+    }
+
+    .galeria .carousel-multi-item-2 .card img {
+        height: 300px;
+    }
+
+    .carousel-multi-item-2 .col-md-3 {
+        padding: 10px;
+    }
+
+    .about .main-content figure img,
+    .about .main-content .figure {
+        height: 200px;
+    }
+
+    .quote {
+        padding: 100px 0;
+    }
+
+    .ayudar {
+        padding: 80px 0;
+    }
+
+    .contact .btn {
+        padding: 15px 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .quote p {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .quote {
+        padding: 80px 0;
+    }
+
+    .contact {
+        padding: 50px 0;
+    }
+
+    .contact .form-control {
+        padding: 15px 10px;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+
+    ::-moz-placeholder {
+        font-size: 14px;
+    }
+
+    :-ms-input-placeholder {
+        font-size: 14px;
+    }
+
+    :-moz-placeholder {
+        font-size: 14px;
+    }
+
+    .galeria .carousel-multi-item-2 .card img {
+        height: 200px;
+    }
+
+    .ayudar p {
+        font-size: 15px;
+        height: auto;
+    }
+
+    .servicios h3,
+    .galeria .heading h3,
+    .ayudar h3,
+    .quote h3 {
+        font-size: 36px;
+    }
+
+    .ayudar h3 {
+        padding-bottom: 20px;
+    }
+
+    .ayudar h5 {
+        font-size: 18px;
+    }
+
+    .ayudar h6 {
+        font-size: 14px;
+    }
+
+    .about .figure-caption p {
+        font-size: 14px;
+    }
+
+    .about .figure-caption h4 {
+        font-size: 18px;
+    }
+
+    .servicios .inner-content p {
+        font-size: 16px;
+    }
+
+    .servicios .inner-content h4 {
+        font-size: 24px;
+    }
+
+    .servicios .inner-content .readmore {
+        font-size: 14px;
+        margin-bottom: 30px;
+        border-bottom: 5px solid #fed253;
+    }
+
+    .banner .big-box h1 {
+        font-size: 38px;
+    }
+
+    .banner .btn-primary,
+    .contact .btn,
+    .quote .btn-primary {
+        font-size: 18px;
+        padding: 12px 45px;
+    }
+
+    .contact h5 {
+        font-size: 46px;
+        padding-bottom: 20px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .contact img {
+        width: 50%;
+        padding-bottom: 20px;
+    }
+
+    .contact address {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .contact .adress span a {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .contact .adress {
+        width: 80%;
+    }
+
+    footer {
+        padding: 40px 0 40px;
+    }
+
+    footer li a {
+        font-size: 16px;
+    }
+
+    .banner .big-box {
+        width: 60%;
+        padding-top: 220px;
+    }
+}
+
+
+@media screen and (min-width: 991px) {
+    .politica .container {
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-light .navbar-nav .nav-link {
+        border-radius: 0;
+    }
+
+    .navbar {
+        margin: 0;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+        -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+        -box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+    }
+
+    .about .main-content:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .about {
+        margin-top: 0;
+    }
+
+    .nav-item {
+        margin: 0;
+    }
+
+    .navbar img,
+    .navbar.scrolled img {
+        width: 60%;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        padding-bottom: 100px;
+    }
+
+    .banner .big-box {
+        width: 80%;
+        padding-top: 150px;
+    }
+
+    .banner .big-box h1 {
+        font-size: 34px;
+        padding-bottom: 30px;
+    }
+
+    .about .figure-caption p {
+        font-size: 16px;
+    }
+
+    .about .figure-caption h4 {
+        font-size: 20px;
+    }
+
+    .contact .adress {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .contact .list-unstyled {
+        text-align: center;
+    }
+
+    .contact img {
+        width: 70%;
+    }
+
+    .quote {
+        text-align: center;
+    }
+
+    .quote p {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .ayudar h3 {
+        text-align: center;
+    }
+
+    .banner .btn-primary,
+    .contact .btn,
+    .quote .btn-primary {
+        font-size: 16px;
+        padding: 12px 35px;
+    }
+
+    footer li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .banner .big-box h1 {
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+
+    .banner .btn-primary,
+    .contact .btn,
+    .quote .btn-primary {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        padding: 8px 30px;
+    }
+
+    .about .figure-caption p {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    .servicios h3,
+    .galeria .heading h3,
+    .ayudar h3,
+    .quote h3 {
+        font-size: 32px;
+    }
+
+    .servicios .content p {
+        font-size: 14px;
+    }
+
+    .servicios .inner-content p {
+        font-size: 14px;
+    }
+
+    .servicios .inner-content h4 {
+        font-size: 22px;
+    }
+
+    .controls-top {
+        margin-right: 0;
+    }
+
+    .galeria .carousel-multi-item-2 .card img {
+        height: 100px;
+    }
+
+    .galeria {
+        padding: 80px 0 80px;
+    }
+
+    .controls-top img {
+        width: 40px;
+    }
+
+    .inner-content {
+        padding: 10px 15px 10px;
+    }
+
+    .ayudar p {
+        margin-bottom: 10px;
+    }
+
+    .ayudar h5 {
+        font-size: 16px;
+    }
+
+    .ayudar h6 {
+        font-size: 12px;
+    }
+
+    .quote p {
+        width: 100%;
+    }
+}
+.about-body-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .whatsapp-message {
+    background-color: #DCF8C6;
+    border-radius: 20px;
+    padding: 15px 20px;
+    max-width: 80%;
+    min-height: 56px;
+    margin: 0 26px 26px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4a4a4a;
+    word-break: break-word;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+    transform: translateZ(0);
+    display: inline-block;
+}
+
+.whatsapp-message h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.whatsapp-message::after {
+    content: "";
+    position: absolute;
+    bottom: 11px;
+    right: -8px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #DCF8C6;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.whatsapp-button:active {
+    background-color: #075E54;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+}
+
+
+.modal-what {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: transparent;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+.modal-what .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-what .close-modal {
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal-what .whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .modal-what {
+        width: calc(100% - 40px); /* Adjust width for mobile screens */
+    }
+
+    .modal-what .modal-content {
+        padding: 15px;
+        box-sizing: border-box;
+    }
+}
+
+/* Toggle modal visibility using checkbox */
+#modal-toggle:checked + .modal-what {
+    display: block;
+}
